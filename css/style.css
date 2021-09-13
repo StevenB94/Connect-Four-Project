@@ -57,7 +57,7 @@
   .board > div {
       margin: 7px;
       text-align: center;
-      border: 5px solid white; 
+      /* border: 5px solid white;  */
       border-radius: 50%; 
       background-color: white;
       height: 70px;
