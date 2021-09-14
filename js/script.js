@@ -41,18 +41,28 @@ board.addEventListener('click', function(e){
     console.log(e.target, 'check for divs')
     console.log(e.target.tagName)
 
-    if (e.target.tagName !== 'DIV') {
-        console.log(e.target, 'not a div')
-    } else {
-        console.log(e.target, 'this is my target')
+    if (e.target.tagName === 'DIV' && player ) {
         e.target.style.backgroundColor = 'red';
+    } else if (e.target.tagName === 'DIV' && !player ){
+        e.target.style.backgroundColor = 'blue';
 
     }
 
+    totalTurns++
+    checkPlayerTurn()
 });
-
-
-
 
 /*----- functions -----*/
 
+function checkPlayerTurn(){
+        return player = totalTurns % 2    
+}
+
+function playerColor(){
+    if (player === true){
+    }
+}
+
+// counter % 2 returns true or false
+// player 1 turn true? if false player 2 turn
+// define fucntion that checks if its player 1 or not then figiure where to call in game loop
