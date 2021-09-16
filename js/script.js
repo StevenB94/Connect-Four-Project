@@ -138,7 +138,7 @@ function checkWin(){
                 let d = document.getElementById(`${winCondition[i][j + 3]}`).style.backgroundColor
 
                 if (a == b && b == c && c == d){
-                    results.innerHTML = 'Player wins'
+                    results.innerHTML = `${totalTurns % 2 ? 'blue' : 'red'} wins`
                 }
             }
         }
