@@ -8,12 +8,9 @@ ConnectFour: https://i.imgur.com/swNwVFw.png
 
 Technologies Used: HTML, CSS, JavaScript
 
-Getting Started: file:///Users/stevenballerini/code/connectfour-project/index.html
+Getting Started: 
 
 Next Steps:
 - Minor bug fixes being able to only click once on paces
 - Drop function so pieces go down to bottom when clicked at the top of column
-
-
-
 

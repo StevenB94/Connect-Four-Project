@@ -9,8 +9,8 @@
 let player; // keep track of which players turn it is
 let winner; // keep track of who won
 let result; // win condition
-let replay; // restart game 
-let start; // will start game
+// let replay; // restart game 
+// let start; // will start game
 let colors; // will switch colors depending on player turn iff possible
 let totalTurns = 0;
 
@@ -71,7 +71,7 @@ const winCondition = [
     [11, 18, 25, 32],
     [12, 19, 26, 33],
     [13, 20, 27, 34],
-    //horizontal rows
+    //diagonal rows
     [0, 8, 16, 24],
     [7, 15, 23, 31],
     [14, 22, 30, 38],
@@ -109,14 +109,9 @@ const piece = document.getElementsByClassName('piece');
 
 /*----- event listeners -----*/
 
-// board.addEventListener('click', function(e){
-//     console.log(e.target)
-// })
-
 board.addEventListener('click', function(e){
     playerMove(e)
 });
-
 
 
 /*----- functions -----*/
